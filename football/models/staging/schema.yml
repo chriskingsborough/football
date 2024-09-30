@@ -1,0 +1,63 @@
+version: 2
+models:
+  - name: stg_clubs
+    description: "This table contains information about football clubs, including market value, squad size, nationality breakdown, stadium details, and coaching information."
+    columns:
+      - name: club_id
+        description: "Unique identifier for the football club."
+        data_tests:
+          - not_null
+          - unique
+      - name: club_code
+        description: "Abbreviated code for the football club."
+      - name: name
+        description: "Full name of the football club."
+        data_tests:
+          - not_null
+      - name: domestic_competition_id
+        description: "ID of the domestic competition in which the club participates."
+      - name: total_market_value
+        description: "Total market value of the club."
+      - name: squad_size
+        description: "Total number of players in the club squad."
+      - name: average_age
+        description: "Average age of players in the squad."
+      - name: foreigners_number
+        description: "Number of foreign players in the club squad."
+      - name: foreigners_percentage
+        description: "Percentage of foreign players in the club squad."
+      - name: national_team_players
+        description: "Number of players who are part of a national team."
+      - name: stadium_name
+        description: "Name of the club's stadium."
+      - name: stadium_seats
+        description: "Number of seats available in the stadium."
+      - name: net_transfer_record
+        description: "Net transfer record of the club."
+      - name: coach_name
+        description: "Name of the club's head coach."
+      - name: last_season
+        description: "Last season the club participated in."
+      - name: url
+        description: "URL to the club's official page."
+
+# version: 2
+
+# models:
+#   - name: my_first_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         data_tests:
+#           - unique
+#           - not_null
+
+#   - name: my_second_dbt_model
+#     description: "A starter dbt model"
+#     columns:
+#       - name: id
+#         description: "The primary key for this table"
+#         data_tests:
+#           - unique
+#           - not_null

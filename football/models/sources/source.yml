@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: "main"
+    tables:
+      - name: clubs
+        description: "Raw data for football clubs."
+      - name: appearances
+        description: "Raw data for appearances"
+      - name: club_games
+        description: "Raw data for club games"
+      - name: competitions
+        description: "Raw data for competitions"
