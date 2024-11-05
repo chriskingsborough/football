@@ -4,11 +4,23 @@ sources:
   - name: raw_data
     schema: "main"
     tables:
-      - name: clubs
+      - name: raw_clubs
         description: "Raw data for football clubs."
-      - name: appearances
+      - name: raw_appearances
         description: "Raw data for appearances"
-      - name: club_games
+      - name: raw_club_games
         description: "Raw data for club games"
-      - name: competitions
+      - name: raw_competitions
         description: "Raw data for competitions"
+      - name: raw_game_events
+        description: "Raw data for game events"
+      - name: raw_game_lineups
+        description: "Raw data for game lineups"
+      - name: raw_games
+        description: "Raw data for games"
+      - name: raw_player_valuations
+        description: "Raw data for player valuations"
+      - name: raw_players
+        description: "Raw data for players"
+      - name: raw_transfers
+        description: "Raw data for transfers"
